@@ -3,6 +3,6 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	// Open Weather api key: 298871d88f2037555322fa3baed94e56
     }
 }
