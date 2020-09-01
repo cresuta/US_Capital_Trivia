@@ -9,10 +9,11 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         HashMap<String, String> capitals = new HashMap<>();
-        capitals.put("Montgomery","Alabama");
-        capitals.put("Junea","Alaska");
-        capitals.put("Phoenix","Arizona");
-        capitals.put("Little Rock","Arkansas");
+        capitals.put("Alabama","Montgomery");
+        capitals.put("Alaska","Junea");
+        capitals.put("Arizona","Phoenix");
+        capitals.put("Arkansas","Little Rock");
+//        Switch order of key/value for remaining capitols/states below
         capitals.put("Sacramento","California");
         capitals.put("Denver","Colorado");
         capitals.put("Hartford","Connecticut");
@@ -60,19 +61,13 @@ public class Main {
         capitals.put("Madison","Wisconsin");
         capitals.put("Cheyenne","Wyoming");
 
-//        System.out.println(capitals.get("Austin"));
-
-//        System.out.println("What is your name?");
-//        String test = input.nextLine();
-//        System.out.println(test);
-
-        for(String state : capitals.values()) {
-            System.out.println("What is the capitol of " + state);
+        for(String state : capitals.keySet()) {
+            System.out.println("What is the capitol of " + state + " ?");
             String answer = input.nextLine();
-            System.out.println(state.keySet());
-            if(answer == capitals.get(state)){
+            if(answer.equals(capitals.get(state))){
                 System.out.println("Correct!");
             }
+            continue;
         }
 
 //      Loop through all States
