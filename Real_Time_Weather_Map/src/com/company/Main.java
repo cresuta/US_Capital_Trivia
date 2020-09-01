@@ -13,7 +13,6 @@ public class Main {
         capitals.put("Alaska","Junea");
         capitals.put("Arizona","Phoenix");
         capitals.put("Arkansas","Little Rock");
-//        Switch order of key/value for remaining capitols/states below
         capitals.put("California","Sacramento");
         capitals.put("Colorado","Denver");
         capitals.put("Connecticut","Hartford");
@@ -61,13 +60,23 @@ public class Main {
         capitals.put("Wisconsin","Madison");
         capitals.put("Wyoming","Cheyenne");
 
+        int score = 0;
+
         for(String state : capitals.keySet()) {
             System.out.println("What is the capitol of " + state + " ?");
             String answer = input.nextLine();
             if(answer.equals(capitals.get(state))){
                 System.out.println("Correct!");
+                score += 1;
+            }
+            else{
+                System.out.println("Game Over! Your score is " + score + "!");
+                break;
             }
             continue;
+        }
+        if(score == 60){
+            System.out.println("You Win! Your score is " + score + " and you got all 60 states!");
         }
 
 //      Loop through all States
