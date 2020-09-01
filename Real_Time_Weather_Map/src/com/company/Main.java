@@ -1,10 +1,13 @@
 package com.company;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
         HashMap<String, String> capitals = new HashMap<>();
         capitals.put("Montgomery","Alabama");
         capitals.put("Junea","Alaska");
@@ -57,7 +60,20 @@ public class Main {
         capitals.put("Madison","Wisconsin");
         capitals.put("Cheyenne","Wyoming");
 
-        System.out.println(capitals.get("Austin"));
+//        System.out.println(capitals.get("Austin"));
+
+//        System.out.println("What is your name?");
+//        String test = input.nextLine();
+//        System.out.println(test);
+
+        for(String state : capitals.values()) {
+            System.out.println("What is the capitol of " + state);
+            String answer = input.nextLine();
+            System.out.println(state.keySet());
+            if(answer == capitals.get(state)){
+                System.out.println("Correct!");
+            }
+        }
 
 //      Loop through all States
 //      Ask user what the capitol is
