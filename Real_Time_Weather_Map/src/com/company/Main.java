@@ -56,5 +56,18 @@ public class Main {
         capitals.put("Charleston","West Virginia");
         capitals.put("Madison","Wisconsin");
         capitals.put("Cheyenne","Wyoming");
+
+        System.out.println(capitals.get("Austin"));
+
+//      Loop through all States
+//      Ask user what the capitol is
+//      Compare user input to State Value entry (make both lowercase while comparing)
+//      If they are the same, add a point to the user's score
+//      If they are different, break the loop to end the game
+//      If user gets all 50 capitols right (game loop ends), User wins the game.
+
+//      Create a UI for the game above
+//      Add a map next to the game that shows the US
+//      Add a tally to keep track of how many the user got correct and incorrect
     }
 }
