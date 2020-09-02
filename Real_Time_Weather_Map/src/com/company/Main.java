@@ -65,7 +65,7 @@ public class Main {
         for(String state : capital.keySet()) {
             System.out.println("What is the capital of " + state + " ?");
             String answer = input.nextLine();
-            if(answer.equals(capital.get(state))){
+            if(answer.toLowerCase().equals(capital.get(state).toLowerCase())){
                 System.out.println("Correct!");
                 score += 1;
             }
