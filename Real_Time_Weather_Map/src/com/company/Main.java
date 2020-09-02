@@ -1,11 +1,14 @@
 package com.company;
 
+
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+        new GUI();
+
         Scanner input = new Scanner(System.in);
 
         HashMap<String, String> capital = new HashMap<>();
@@ -90,4 +93,5 @@ public class Main {
 //      Add a map next to the game that shows the US
 //      Add a tally to keep track of how many the user got correct and incorrect
     }
+
 }
