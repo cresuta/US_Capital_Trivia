@@ -8,64 +8,64 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        HashMap<String, String> capitals = new HashMap<>();
-        capitals.put("Alabama","Montgomery");
-        capitals.put("Alaska","Junea");
-        capitals.put("Arizona","Phoenix");
-        capitals.put("Arkansas","Little Rock");
-        capitals.put("California","Sacramento");
-        capitals.put("Colorado","Denver");
-        capitals.put("Connecticut","Hartford");
-        capitals.put("Delaware","Dover");
-        capitals.put("Florida","Tallahassee");
-        capitals.put("Georgia","Atlanta");
-        capitals.put("Hawaii","Honolulu");
-        capitals.put("Idaho","Boise");
-        capitals.put("Illinois","Springfield");
-        capitals.put("Indiana","Indianapolis");
-        capitals.put("Iowa","Des Moines");
-        capitals.put("Kansas","Topeka");
-        capitals.put("Kentucky","Frankfort");
-        capitals.put("Louisiana","Baton Rouge");
-        capitals.put("Maine","Augusta");
-        capitals.put("Maryland","Annapolis");
-        capitals.put("Massachusetts","Boston");
-        capitals.put("Michigan","Lansing");
-        capitals.put("Minnesota","Saint Paul");
-        capitals.put("Mississippi","Jackson");
-        capitals.put("Missouri","Jefferson City");
-        capitals.put("Montana","Helena");
-        capitals.put("Nebraska","Lincoln");
-        capitals.put("Nevada","Carson City");
-        capitals.put("New Hampshire","Concord");
-        capitals.put("New Jersey","Trenton");
-        capitals.put("New Mexico","Santa Fe");
-        capitals.put("New York","Albany");
-        capitals.put("North Carolina","Raleigh");
-        capitals.put("North Dakota","Bismarck");
-        capitals.put("Ohio","Columbus");
-        capitals.put("Oklahoma","Oklahoma City");
-        capitals.put("Oregon","Salem");
-        capitals.put("Pennsylvania","Harrisburg");
-        capitals.put("Rhode Island","Providence");
-        capitals.put("South Carolina","Columbia");
-        capitals.put("South Dakota","Pierre");
-        capitals.put("Tennessee","Nashville");
-        capitals.put("Texas","Austin");
-        capitals.put("Utah","Salt Lake City");
-        capitals.put("Vermont","Montpelier");
-        capitals.put("Virgina","Richmond");
-        capitals.put("Washington","Olympia");
-        capitals.put("West Virginia","Charleston");
-        capitals.put("Wisconsin","Madison");
-        capitals.put("Wyoming","Cheyenne");
+        HashMap<String, String> capital = new HashMap<>();
+        capital.put("Alabama","Montgomery");
+        capital.put("Alaska","Junea");
+        capital.put("Arizona","Phoenix");
+        capital.put("Arkansas","Little Rock");
+        capital.put("California","Sacramento");
+        capital.put("Colorado","Denver");
+        capital.put("Connecticut","Hartford");
+        capital.put("Delaware","Dover");
+        capital.put("Florida","Tallahassee");
+        capital.put("Georgia","Atlanta");
+        capital.put("Hawaii","Honolulu");
+        capital.put("Idaho","Boise");
+        capital.put("Illinois","Springfield");
+        capital.put("Indiana","Indianapolis");
+        capital.put("Iowa","Des Moines");
+        capital.put("Kansas","Topeka");
+        capital.put("Kentucky","Frankfort");
+        capital.put("Louisiana","Baton Rouge");
+        capital.put("Maine","Augusta");
+        capital.put("Maryland","Annapolis");
+        capital.put("Massachusetts","Boston");
+        capital.put("Michigan","Lansing");
+        capital.put("Minnesota","Saint Paul");
+        capital.put("Mississippi","Jackson");
+        capital.put("Missouri","Jefferson City");
+        capital.put("Montana","Helena");
+        capital.put("Nebraska","Lincoln");
+        capital.put("Nevada","Carson City");
+        capital.put("New Hampshire","Concord");
+        capital.put("New Jersey","Trenton");
+        capital.put("New Mexico","Santa Fe");
+        capital.put("New York","Albany");
+        capital.put("North Carolina","Raleigh");
+        capital.put("North Dakota","Bismarck");
+        capital.put("Ohio","Columbus");
+        capital.put("Oklahoma","Oklahoma City");
+        capital.put("Oregon","Salem");
+        capital.put("Pennsylvania","Harrisburg");
+        capital.put("Rhode Island","Providence");
+        capital.put("South Carolina","Columbia");
+        capital.put("South Dakota","Pierre");
+        capital.put("Tennessee","Nashville");
+        capital.put("Texas","Austin");
+        capital.put("Utah","Salt Lake City");
+        capital.put("Vermont","Montpelier");
+        capital.put("Virgina","Richmond");
+        capital.put("Washington","Olympia");
+        capital.put("West Virginia","Charleston");
+        capital.put("Wisconsin","Madison");
+        capital.put("Wyoming","Cheyenne");
 
         int score = 0;
 
-        for(String state : capitals.keySet()) {
-            System.out.println("What is the capitol of " + state + " ?");
+        for(String state : capital.keySet()) {
+            System.out.println("What is the capital of " + state + " ?");
             String answer = input.nextLine();
-            if(answer.equals(capitals.get(state))){
+            if(answer.equals(capital.get(state))){
                 System.out.println("Correct!");
                 score += 1;
             }
@@ -80,7 +80,7 @@ public class Main {
         }
 
 //      Loop through all States
-//      Ask user what the capitol is
+//      Ask user what the capital is
 //      Compare user input to State Value entry (make both lowercase while comparing)
 //      If they are the same, add a point to the user's score
 //      If they are different, break the loop to end the game
