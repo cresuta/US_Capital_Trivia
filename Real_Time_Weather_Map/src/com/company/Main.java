@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        new GUI();
+//        new GUI();
 
         Scanner input = new Scanner(System.in);
 
@@ -75,7 +75,7 @@ public class Main {
                 questionTally -= 1;
             }
             else{
-                System.out.println("Incorrect!");
+                System.out.println("Incorrect! The correct answer was " + capital.get(state) + ".");
                 questionTally -= 1;
             }
             continue;
