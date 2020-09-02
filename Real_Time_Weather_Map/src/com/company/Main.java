@@ -64,22 +64,24 @@ public class Main {
         capital.put("Wyoming","Cheyenne");
 
         int score = 0;
+        int questionTally = 50;
 
         for(String state : capital.keySet()) {
             System.out.println("What is the capital of " + state + " ?");
             String answer = input.nextLine();
-            if(answer.equals(capital.get(state))){
+            if(answer.toLowerCase().equals(capital.get(state).toLowerCase())){
                 System.out.println("Correct!");
                 score += 1;
+                questionTally -= 1;
             }
             else{
-                System.out.println("Game Over! Your score is " + score + "!");
-                break;
+                System.out.println("Incorrect!");
+                questionTally -= 1;
             }
             continue;
         }
-        if(score == 60){
-            System.out.println("You Win! Your score is " + score + " and you got all 60 states!");
+        if(questionTally == 0){
+            System.out.println("Game Over. You guessed " + score + "/50 correct!");
         }
 
 //      Loop through all States
