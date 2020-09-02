@@ -2,8 +2,10 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class GUI {
+public class GUI implements ActionListener {
     private int clicks = 0;
     private JLabel label = new JLabel("Number of clicks:  0     ");
     private JFrame frame = new JFrame();
@@ -12,6 +14,7 @@ public class GUI {
 
         // the clickable button
         JButton button = new JButton("Click Me");
+        button.addActionListener(this);
 
         // the panel with the button and text
         JPanel panel = new JPanel();
@@ -26,6 +29,12 @@ public class GUI {
         frame.setTitle("GUI");
         frame.pack();
         frame.setVisible(true);
+
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        clicks++;
+        label.setText("Number of clicks: " + clicks);
+    }
 }
